@@ -1,0 +1,100 @@
+
+.bg-light {
+    background-color: #0D86FF!important;
+}
+.form-actions {
+    margin: 0;
+    background-color: transparent;
+    text-align: center;
+}
+
+.jumbotron-jum {
+    width: 450px!important;
+
+}
+
+.h-color
+{
+color: #0D86FF" ;
+}
+        .navbar-light .navbar-brand {
+            color: rgba(255, 255, 255, 0.9);
+            
+        }
+
+        .navbar-light .navbar-nav .nav-link {
+            color: rgb(255, 255, 255);
+        }
+
+        .navbar-expand-lg .navbar-nav .nav-link {
+            padding-right: 4.5rem;
+            padding-left: 1.5rem;
+        }
+
+        a {
+            color: rgb(255, 255, 255)!important;
+            text-decoration: none;
+            background-color: transparent;
+            padding-left: 85px;
+        }
+        .footer {
+            position: fixed;
+            left: 0;
+            bottom: 1px;
+            width: 100%;
+            background-color: #A2A8BE;
+            color: white;
+            text-align: center;
+            height: 45px;
+        }
+
+        .centered {
+            margin: 0 auto;
+        }
+
+        /* .container {
+            max-width:max-content;
+        } */
+        .table td, .table th {
+    padding: .75rem!important;
+    border: none!important;
+}
+.table thead th{
+    border:none!important;
+}
+
+        .jumbotron {
+            padding: 2rem 1rem;
+            margin-bottom: 5rem;
+            background-color: #fcfcfc!important;
+            border-radius: 1.3rem;
+            margin-top: 100px;
+        }
+        body {
+            margin: 0;
+            font-family: "Helvetica Neue", Helvetica,"Helvetica Neue LT Com";
+            font-size: 1rem;
+            font-weight: 400;
+            line-height: 1.5;
+            color: #212529;
+            text-align: left;
+            background-color: #f7f7f7;
+        }
+
+        .btn {
+            display: inline-block;
+            font-weight: 400;
+            color: #ffffff;
+            text-align: center;
+            vertical-align: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            -ms-user-select: none;
+            user-select: none;
+            border: 1px solid transparent;
+            padding: -1.625rem .75rem;
+            font-size: 1rem;
+            line-height: 1.5;
+            border-radius: .25rem;
+            transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+        }
