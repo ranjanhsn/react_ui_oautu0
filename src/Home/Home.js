@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { UserLoginFetchData } from '../Actions/actions';
 import { connect } from 'react-redux';
-import axios from 'axios';
 import HeaderBar from '../Pages/HeaderBar';
 
 class Home extends Component {

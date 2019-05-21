@@ -1,7 +1,24 @@
 import React, { Component } from 'react';
+import { UserLoginFetchData } from '../../Actions/actions';
+import { connect } from 'react-redux';
+import auth0 from 'auth0-js';
 
 
 class HeaderBar extends Component {
+
+    accessToken;
+    idToken;
+    expiresAt;
+  
+    auth0 = new auth0.WebAuth({
+      domain: 'ashokreddypenamalli.auth0.com',
+      clientID: '4hsR5-XRnqpz__5w1NjoIoJNRoHI4-lX',
+      redirectUri: 'http://localhost:3000/callback',
+      responseType: 'token id_token',
+      scope: 'openid profile'
+    });
+
+
     constructor(props) {
         super(props)
         this.state = {}
@@ -9,7 +26,32 @@ class HeaderBar extends Component {
 
     }
 
+    logout() {
+          this.accessToken = null;
+    this.idToken = null;
+    this.expiresAt = 0;
+
+    // Remove user profile
+    this.userProfile = null;
+
+    // Clear token renewal
+    clearTimeout(this.tokenRenewalTimeout);
+
+    // Remove isLoggedIn flag from localStorage
+    localStorage.removeItem('isLoggedIn');
+
+    // this.auth0.logout({
+    //   returnTo: window.location.origin
+    // });
+    this.auth0.logout();
+
+      }
+    
+
     render() {
+        console.log("Hello:", localStorage.getItem('isLoggedIn'))
+
+        var isAuthenticated = localStorage.getItem('isLoggedIn');
 
         return (
 
@@ -34,11 +76,19 @@ class HeaderBar extends Component {
                             <li className="nav-item">
                                 <a className="nav-link " href="#">Contact</a>
                             </li>
+
+                            {
+                                isAuthenticated&& (
+                                    <li className="nav-item">
+                                        <a className="nav-link"  onClick={this.logout.bind(this)}>logout</a>
+                                    </li>
+
+                                )}
                         </ul>
                     </div>
                 </nav>
 
-{this.props.children}
+                {this.props.children}
 
                 <div className="footer">
                     <p></p>
@@ -53,4 +103,22 @@ class HeaderBar extends Component {
 
 }
 
-export default HeaderBar;
+// export default Login;
+function mapStateToProps(state, actions) {
+    if (state.fetchLogin && state.fetchLogin.Status) {
+        return { registerResponse: state.fetchLogin }
+
+
+    }
+    else {
+
+        return {}
+
+
+    }
+
+    // console.log("User Login", state.fetchLogin)
+
+}
+
+export default connect(mapStateToProps)(HeaderBar);
