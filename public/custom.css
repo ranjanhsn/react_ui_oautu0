@@ -1,0 +1,59 @@
+h1,p{
+    text-align: center;
+}
+.nav-link{
+    color: rgb(255, 255, 255) !important;
+}
+a1{
+color: rgb(0, 0, 0)!important;
+}
+td,th{
+    text-align: left;
+}
+.numfon{
+    font-size: 40px;
+
+}
+.monthyanually{
+    text-align: center;
+}
+.btn-primary {
+color: #fff ! important;
+color:  #21a6cf;
+}
+.btn-light {
+    color: rgb(0, 0, 0) ! important;
+    color: #cdc9c8;
+}
+.deve{
+    color: orange;
+    font-size: 28px;
+    font-weight: bold;
+}
+.star{
+    color:rgb(145, 45, 145);
+    font-size: 28px;
+    font-weight: bold;
+}
+.grow{
+    color: green;
+    font-size: 28px;
+    font-weight: bold;
+}
+.busin{
+    color: #21a6cf;
+    font-size: 28px;
+    font-weight: bold;
+}
+sup { 
+    vertical-align: super;
+    font-size: large;
+  }
+  .c{
+        text-decoration: underline;
+        text-decoration-style:dashed;
+      
+  }
+  .d{
+    color: green
+  }
