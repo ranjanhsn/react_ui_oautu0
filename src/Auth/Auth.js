@@ -10,7 +10,7 @@ export default class Auth {
   auth0 = new auth0.WebAuth({
     domain: 'ashokreddypenamalli.auth0.com',
     clientID: '4hsR5-XRnqpz__5w1NjoIoJNRoHI4-lX',
-    redirectUri: 'http://localhost:3000/callback',
+    redirectUri: 'http://ec2-3-15-23-52.us-east-2.compute.amazonaws.com/callback',
     responseType: 'token id_token',
     scope: 'openid profile'
   });
