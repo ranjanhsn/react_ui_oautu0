@@ -57,3 +57,84 @@ sup {
   .d{
     color: green
   }
+  .bg-light {
+    background-color: #1683f0!important;
+}
+.navbar-light .navbar-brand {
+    color: rgba(255, 255, 255, 0.9);
+}
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(255, 255, 255);
+}
+.navbar-expand-lg .navbar-nav .nav-link {
+    padding-right: 4.5rem;
+    padding-left: 1.5rem;
+}
+a {
+    color: #0D86FF;
+    text-decoration: none;
+    background-color: transparent;
+    padding-left: 85px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color:#A2A8BE;
+    color: white;
+    text-align: center;
+    height: 45px;
+}
+.centered{
+    margin: 0 auto;
+}
+.container {
+    max-width: 390px;
+
+}
+.jumbotron {
+    padding: 2rem 1rem;
+    margin-bottom: 4rem;
+    background-color: #ffffff;
+    border-radius: 1.3rem;
+    margin-top: 100px;
+}
+.form-group {
+    margin-bottom: 0rem;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #3cda8de3;
+    border-color: #3cda8de3;
+}
+body {
+    margin: 0;
+    font-family: Helvetica Neue LT Com,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji" ;
+    font-size: 0.8rem;
+    font-weight: bold;
+    line-height: 1.5;
+    color: #212529;
+    text-align: left;
+    background-color: #f7f7f7;
+}
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    color: #ffffff;
+    text-align: center;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: -1.625rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+}
+.chkbox{
+    padding-left: 10px;
+}
