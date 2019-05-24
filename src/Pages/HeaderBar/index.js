@@ -49,9 +49,7 @@ class HeaderBar extends Component {
     
 
     render() {
-        console.log("Hello:", localStorage.getItem('isLoggedIn'))
-
-        var isAuthenticated = localStorage.getItem('isLoggedIn');
+        var TisAuthenticated = this.props.isAuthenticated
 
         return (
 
@@ -78,7 +76,7 @@ class HeaderBar extends Component {
                             </li>
 
                             {
-                                isAuthenticated&& (
+                                TisAuthenticated&& (
                                     <li className="nav-item">
                                         <a className="nav-link"  onClick={this.logout.bind(this)}>logout</a>
                                     </li>

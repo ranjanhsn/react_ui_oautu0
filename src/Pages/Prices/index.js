@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import HeaderBar from '../HeaderBar';
 
-class Register extends Component
+class Prices extends Component
 {
 
     constructor() {
@@ -12,18 +12,18 @@ class Register extends Component
 
     render()
     {
-
+        const { isAuthenticated } = this.props.auth;
 
         return  (
-            <HeaderBar>
-                <div className="container-fluid">
+            <HeaderBar isAuthenticated={isAuthenticated()} >
+              {isAuthenticated() &&(  <div className="container-fluid">
                 <div className="container jumbotron vertical-cente">
                         <h1>Simple,fair pricing</h1>
                         <p>Sign up for a yearly plan and receive one month for free</p>
                         <div className="monthyanually">
-                        <button type="button" class="btn btn-primary" id="#home">MONTHLY</button>
-                        <button type="button" class="btn btn-light" id="#menu1">ANNUAL</button>
-                        <table class="table table-striped">
+                        <button type="button" className="btn btn-primary" id="#home">MONTHLY</button>
+                        <button type="button" className="btn btn-light" id="#menu1">ANNUAL</button>
+                        <table className="table table-striped">
                         <thead>
                             <tr>
                                 <th></th>
@@ -148,17 +148,17 @@ class Register extends Component
                             </tr>
                                     <tr>
                                         <td></td>
-                                        <td><button type="button" class="btn btn-success" id="#home">Start free trail</button></td>
-                                        <td><button type="button" class="btn btn-success" id="#home">Start free trail</button></td>
-                                        <td><button type="button" class="btn btn-success" id="#home">Start free trail</button></td>
-                                        <td><button type="button" class="btn btn-success" id="#home">Start free trail</button></td>
+                                        <td><button type="button" className="btn btn-success" id="#home">Start free trail</button></td>
+                                        <td><button type="button" className="btn btn-success" id="#home">Start free trail</button></td>
+                                        <td><button type="button" className="btn btn-success" id="#home">Start free trail</button></td>
+                                        <td><button type="button" className="btn btn-success" id="#home">Start free trail</button></td>
                                     </tr>
                         </tbody>
                     </table>
                         </div>
                     </div>
                     
-                </div>
+                </div>)}
 
 
             </HeaderBar>
@@ -177,4 +177,4 @@ class Register extends Component
 
 }
 
-export default Register;
+export default Prices;

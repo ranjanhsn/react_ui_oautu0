@@ -29,7 +29,7 @@ class App extends Component {
     
 
     return (
-      <HeaderBar>
+      <HeaderBar isAuthenticated={isAuthenticated()}>
         {!isAuthenticated() && (<div>
           <div className="container jumbotron-jum jumbotron vertical-cente">
             <h2 className="text-center">Login</h2>
