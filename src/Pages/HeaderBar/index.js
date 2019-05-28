@@ -10,13 +10,21 @@ class HeaderBar extends Component {
     idToken;
     expiresAt;
   
+    // auth0 = new auth0.WebAuth({
+    //   domain: 'ashokreddypenamalli.auth0.com',
+    //   clientID: '4hsR5-XRnqpz__5w1NjoIoJNRoHI4-lX',
+    //   redirectUri: 'http://ec2-3-15-23-52.us-east-2.compute.amazonaws.com/callback',
+    //   responseType: 'token id_token',
+    //   scope: 'openid profile'
+    // });
+
     auth0 = new auth0.WebAuth({
-      domain: 'ashokreddypenamalli.auth0.com',
-      clientID: '4hsR5-XRnqpz__5w1NjoIoJNRoHI4-lX',
-      redirectUri: 'http://ec2-3-15-23-52.us-east-2.compute.amazonaws.com/callback',
-      responseType: 'token id_token',
-      scope: 'openid profile'
-    });
+        domain: 'client-access.auth0.com',
+        clientID: '5IjcKfRFb41yquwWrIy6dhotxQtEDGej',
+        redirectUri: 'http://localhost:3000/callback',
+        responseType: 'token id_token',
+        scope: 'openid profile'
+      });
 
 
     constructor(props) {
