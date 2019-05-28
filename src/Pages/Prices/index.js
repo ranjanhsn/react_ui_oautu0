@@ -17,7 +17,7 @@ class Prices extends Component
         return  (
             <HeaderBar isAuthenticated={isAuthenticated()} >
               {isAuthenticated() &&(  <div className="container-fluid">
-                <div className="container jumbotron vertical-cente">
+                <div className="jumbotron vertical-cente align">
                         <h1>Simple,fair pricing</h1>
                         <p>Sign up for a yearly plan and receive one month for free</p>
                         <div className="monthyanually">

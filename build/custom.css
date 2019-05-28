@@ -89,16 +89,18 @@ a {
 .centered{
     margin: 0 auto;
 }
-.container {
-    max-width: 390px;
+.align {
+    max-width: inherit !important;
 
 }
+
 .jumbotron {
     padding: 2rem 1rem;
     margin-bottom: 4rem;
     background-color: #ffffff;
     border-radius: 1.3rem;
     margin-top: 100px;
+    max-width: inherit;
 }
 .form-group {
     margin-bottom: 0rem;
